@@ -1,6 +1,6 @@
 {% set name = "filterpy" %}
-{% set version = "1.2.1" %}
-{% set sha256 = "38ba6fb64b48bc787b884a169fe85178a9109fc025c01893bba4ad2da33909ab" %}
+{% set version = "1.2.3" %}
+{% set sha256 = "208535c6aca1b4ca7b5409ad7c0becdda59dfb9c51883970e8201db31b6ea3e0" %}
 
 package:
   name: {{ name|lower }}
