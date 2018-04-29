@@ -18,14 +18,16 @@ Has companion book 'Kalman and Bayesian Filters in Python'.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/filterpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/filterpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/filterpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/filterpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/filterpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/filterpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/filterpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/filterpy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/filterpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/filterpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/filterpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/filterpy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/filterpy/badges/version.svg)](https://anaconda.org/conda-forge/filterpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/filterpy/badges/downloads.svg)](https://anaconda.org/conda-forge/filterpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-filterpy-green.svg)](https://anaconda.org/conda-forge/filterpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/filterpy.svg)](https://anaconda.org/conda-forge/filterpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/filterpy.svg)](https://anaconda.org/conda-forge/filterpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/filterpy.svg)](https://anaconda.org/conda-forge/filterpy) |
 
 Installing filterpy
 ===================
