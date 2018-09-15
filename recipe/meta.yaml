@@ -1,6 +1,6 @@
 {% set name = "filterpy" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "5c5a861007bf88ad8adec4eb2e38ce309da2c9389ae7e98c7d06b537ed934788" %}
+{% set version = "1.4.4" %}
+{% set sha256 = "c7ad565990f0537b54ea01ea473656c89064d6621f22eb65af4a9375ae22e724" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
