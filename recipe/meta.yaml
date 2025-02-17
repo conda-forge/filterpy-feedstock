@@ -1,15 +1,12 @@
-{% set name = "filterpy" %}
 {% set version = "1.4.5" %}
-{% set sha256 = "4f2a4d39e4ea601b9ab42b2db08b5918a9538c168cff1c6895ae26646f3d73b1" %}
 
 package:
-  name: {{ name|lower }}
+  name: filterpy
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/f/filterpy/filterpy-{{ version }}.zip
+  sha256: 4f2a4d39e4ea601b9ab42b2db08b5918a9538c168cff1c6895ae26646f3d73b1
 
 build:
   noarch: python
@@ -30,7 +27,10 @@ requirements:
 
 test:
   requires:
+    - pip
     - python {{ python_min }}
+  commands:
+    - pip check
   imports:
     - filterpy
     - filterpy.common
