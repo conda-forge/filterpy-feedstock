@@ -154,5 +154,6 @@ Feedstock Maintainers
 =====================
 
 * [@hajapy](https://github.com/hajapy/)
+* [@hmaarrfk](https://github.com/hmaarrfk/)
 * [@rlabbe](https://github.com/rlabbe/)
 
