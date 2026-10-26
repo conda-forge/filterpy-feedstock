@@ -1,29 +1,29 @@
-{% set version = "1.4.5" %}
+{% set version = "2.0.0" %}
 
 package:
   name: filterpy
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/f/filterpy/filterpy-{{ version }}.zip
-  sha256: 4f2a4d39e4ea601b9ab42b2db08b5918a9538c168cff1c6895ae26646f3d73b1
+  url: https://files.pythonhosted.org/packages/source/f/filterpy/filterpy-{{ version }}.tar.gz
+  sha256: aadfffd65af3435244be6b50b8d373697deb9186a1d134e882430b59ea0a8553
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=61
 
   run:
     - python >={{ python_min }}
-    - numpy
-    - matplotlib-base
-    - scipy
+    - numpy >=1.26
+    - matplotlib-base >=3.6
+    - scipy >=1.13
 
 test:
   requires:
@@ -52,10 +52,10 @@ about:
   summary: 'Kalman filters and other optimal and non-optimal estimation filters in Python'
 
   description: |
-      Kalman filtering and optimal estimation library in Python.
-      Kalman filter, Extended Kalman filter, Unscented Kalman filter,
-      g-h, least squares, H Infinity, smoothers, and more.
-      Has companion book 'Kalman and Bayesian Filters in Python'.
+    Kalman filtering and optimal estimation library in Python.
+    Kalman filter, Extended Kalman filter, Unscented Kalman filter,
+    g-h, least squares, H Infinity, smoothers, and more.
+    Has companion book 'Kalman and Bayesian Filters in Python'.
   doc_url: https://filterpy.readthedocs.io/en/latest/
   dev_url: https://github.com/rlabbe/filterpy
 
